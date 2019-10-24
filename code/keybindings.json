@@ -1,0 +1,65 @@
+// Place your key bindings in this file to overwrite the defaults
+[
+    {
+        "key": "ctrl+t ctrl+t",
+        "command": "workbench.action.terminal.openNativeConsole",
+        "when": "!terminalFocus"
+    },
+    {
+        "key": "ctrl+shift+c",
+        "command": "-workbench.action.terminal.openNativeConsole",
+        "when": "!terminalFocus"
+    },
+    {
+        "key": "ctrl+[BracketLeft]",
+        "command": "workbench.action.quickOpenTerm"
+    },
+    {
+        "key": "ctrl+shift+alt+left",
+        "command": "workbench.action.focusPreviousGroup"
+    },
+    {
+        "key": "ctrl+shift+alt+right",
+        "command": "workbench.action.focusNextGroup"
+    },
+    {
+        "key": "ctrl+numpad1",
+        "command": "workbench.action.focusFirstEditorGroup"
+    },
+    {
+        "key": "ctrl+1",
+        "command": "-workbench.action.focusFirstEditorGroup"
+    },
+    {
+        "key": "ctrl+numpad2",
+        "command": "workbench.action.focusSecondEditorGroup"
+    },
+    {
+        "key": "ctrl+2",
+        "command": "-workbench.action.focusSecondEditorGroup"
+    },
+    {
+        "key": "ctrl+numpad3",
+        "command": "workbench.action.focusThirdEditorGroup"
+    },
+    {
+        "key": "ctrl+3",
+        "command": "-workbench.action.focusThirdEditorGroup"
+    },
+    {
+        "key": "ctrl+shift+]",
+        "command": "-spotify.next"
+    },
+    {
+        "key": "ctrl+shift+[",
+        "command": "-spotify.previous"
+    },
+    {
+        "key": "ctrl+shift+;",
+        "command": "-spotify.volumeDown"
+    },
+    {
+        "key": "ctrl+shift+'",
+        "command": "-spotify.volumeUp"
+    }
+]
