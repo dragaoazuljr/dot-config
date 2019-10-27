@@ -1,0 +1,29 @@
+{
+    "usageCount": 34, 
+    "omitTrigger": false, 
+    "prompt": false, 
+    "description": "Double Quotes", 
+    "abbreviation": {
+        "wordChars": "[\\w]", 
+        "abbreviations": [], 
+        "immediate": false, 
+        "ignoreCase": false, 
+        "backspace": true, 
+        "triggerInside": false
+    }, 
+    "hotkey": {
+        "hotKey": "<escape>", 
+        "modifiers": [
+            "<shift>"
+        ]
+    }, 
+    "modes": [], 
+    "showInTrayMenu": false, 
+    "matchCase": false, 
+    "filter": {
+        "regex": null, 
+        "isRecursive": false
+    }, 
+    "type": "phrase", 
+    "sendMode": "kb"
+}
