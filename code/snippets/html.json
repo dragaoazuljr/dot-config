@@ -1,0 +1,56 @@
+{
+	// Place your snippets for html here. Each snippet is defined under a snippet name and has a prefix, body and 
+	// description. The prefix is what is used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
+	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. Placeholders with the 
+	// same ids are connected.
+	// Example:
+	// "Print to console": {
+	// 	"prefix": "log",
+	// 	"body": [
+	// 		"console.log('$1');",
+	// 		"$2"
+	// 	],
+	// 	"description": "Log output to console"
+	// }
+	"mm-box": {
+		"prefix": "mm-box",
+		"body": [
+			"<section class=\"mm-box-container\">",
+			"\t<header class=\"mm-box-header\">$1</header>",
+			"\t<div class=\"mm-box-content\">",
+			"\t\t$2",
+			"\t</div>",
+			"</section>"
+		],
+		"description": "Add mm-box-container section"
+	},
+	"btn-primary": {
+		"prefix": "btn",
+		"body": "<button class=\"btn btn-$1\" (click)=\"$2\">$3</button>"
+	},
+	"p-sidebar": {
+		"prefix": "p-sidebar",
+		"body": [
+			"<p-sidebar [(visible)]=\"$1\" position=\"$2\" [showCloseIcon]=\"false\" [style]=\"{padding: '0px', border: '10px', width: '60rem'}\" (onHide)=\"$4\">",
+			"\t<div class=\"sidebar-header\">",
+			"\t\t<h5>",
+			"\t\t\t$5",
+			"\t\t</h5>",
+			"\t</div>",
+			"\t<div class=\"sidebar-content\">",
+			"\t\t$6",
+			"\t</div>",
+			"</p-sidebar>"
+		]
+	},
+	"fieldset-haruki": {
+		"prefix": "mmp5-fieldset-haruki",
+		"body": [
+			"<mmp5-fieldset-haruki",
+			"\t[formControl]=\"$1\"",
+			"\t[key]=\"$2\"",
+			"\t$3>",
+			"</mmp5-fieldset-haruki>",
+		]
+	}
+}
