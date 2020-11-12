@@ -2,7 +2,7 @@
     "workbench.startupEditor": "newUntitledFile",
     "window.menuBarVisibility": "toggle",
     "window.titleBarStyle": "custom",
-    "workbench.colorTheme": "LaserWave",
+    "workbench.colorTheme": "After Dark",
     "editor.fontWeight": "300",
     "window.newWindowDimensions": "maximized",
     "window.openFoldersInNewWindow": "on",
@@ -13,7 +13,7 @@
     "typescript.updateImportsOnFileMove.enabled": "always",
     "workbench.editor.enablePreviewFromQuickOpen": false,
     "workbench.editor.enablePreview": false,
-    "editor.fontSize": 11,
+    "editor.fontSize": 10,
     "workbench.editor.closeEmptyGroups": false,
     "editor.suggestSelection": "first",
     "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
@@ -46,5 +46,9 @@
         "typescript:S1125": {
             "level": "off"
         }
-    }
+    },
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "editor.renderControlCharacters": false,
+    "terminal.integrated.fontFamily": "MesloLGS NF",
+    "terminal.integrated.fontSize": 10
 }

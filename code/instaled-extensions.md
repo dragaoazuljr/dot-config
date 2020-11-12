@@ -1,8 +1,11 @@
+code --install-extension aaron-bond.better-comments
 code --install-extension akamud.vscode-theme-onedark
 code --install-extension Angular.ng-template
 code --install-extension ashrafhadden.dracula-dot-min
+code --install-extension CoenraadS.bracket-pair-colorizer-2
 code --install-extension davidbabel.vscode-simpler-icons
 code --install-extension dhedgecock.radical-vscode
+code --install-extension dillonchanis.midnight-city
 code --install-extension dracula-theme.theme-dracula
 code --install-extension eamodio.gitlens
 code --install-extension EliverLara.andromeda
@@ -17,6 +20,7 @@ code --install-extension jeff-hykin.xd-theme
 code --install-extension jolaleye.horizon-theme-vscode
 code --install-extension juanmnl.vscode-theme-1984
 code --install-extension luqimin.velocity
+code --install-extension Luxcium.pop-n-lock-theme-vscode
 code --install-extension mhutchie.git-graph
 code --install-extension Mikael.Angular-BeastCode
 code --install-extension ms-azuretools.vscode-docker
@@ -27,10 +31,12 @@ code --install-extension quicktype.quicktype
 code --install-extension rebornix.ruby
 code --install-extension redhat.java
 code --install-extension RobbOwen.synthwave-vscode
-code --install-extension sainnhe.forest-theme
+code --install-extension rocketseat.theme-omni
 code --install-extension shyykoserhiy.vscode-spotify
 code --install-extension SonarSource.sonarlint-vscode
+code --install-extension ssmi.after-dark
 code --install-extension svetlozarangelov.vscode-open-project
+code --install-extension teabyii.ayu
 code --install-extension VisualStudioExptTeam.vscodeintellicode
 code --install-extension vscjava.vscode-java-debug
 code --install-extension vscjava.vscode-java-dependency
@@ -38,4 +44,5 @@ code --install-extension vscjava.vscode-java-pack
 code --install-extension vscjava.vscode-java-test
 code --install-extension vscjava.vscode-maven
 code --install-extension vscodevim.vim
+code --install-extension webrender.synthwave-x-fluoromachine
 code --install-extension wingrunr21.vscode-ruby
