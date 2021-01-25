@@ -7,6 +7,7 @@ code --install-extension davidbabel.vscode-simpler-icons
 code --install-extension dhedgecock.radical-vscode
 code --install-extension dillonchanis.midnight-city
 code --install-extension dracula-theme.theme-dracula
+code --install-extension dsznajder.es7-react-js-snippets
 code --install-extension eamodio.gitlens
 code --install-extension EliverLara.andromeda
 code --install-extension Endormi.2077-theme
@@ -30,6 +31,7 @@ code --install-extension PKief.material-icon-theme
 code --install-extension quicktype.quicktype
 code --install-extension rebornix.ruby
 code --install-extension redhat.java
+code --install-extension ritwickdey.LiveServer
 code --install-extension RobbOwen.synthwave-vscode
 code --install-extension rocketseat.theme-omni
 code --install-extension shyykoserhiy.vscode-spotify
