@@ -27,7 +27,7 @@ bindkey "$key[Down]" down-line-or-beginning-search
 source ~/.bashrc
 
 #history-substring-search
-#plugins=( [plugins...] history-substring-search)
+plugins=(docker docker-compose kubectl node npm)
 
 # Created by newuser for 5.8
 source ~/powerlevel10k/powerlevel10k.zsh-theme
