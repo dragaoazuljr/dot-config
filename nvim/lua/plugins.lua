@@ -46,5 +46,12 @@ packer.startup(function(use)
 
   use 'lewis6991/gitsigns.nvim'
 
+  use {
+    'VonHeikemen/fine-cmdline.nvim',
+    requires = {
+      {'MunifTanjim/nui.nvim'}
+    }
+  }
+
 end)
 
