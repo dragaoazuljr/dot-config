@@ -2,6 +2,7 @@
     "workbench.startupEditor": "newUntitledFile",
     "window.menuBarVisibility": "toggle",
     "window.titleBarStyle": "custom",
+    "workbench.colorTheme": "1984 - Cyberpunk",
     "editor.fontWeight": "300",
     "window.newWindowDimensions": "maximized",
     "window.openFoldersInNewWindow": "on",
@@ -12,12 +13,13 @@
     "typescript.updateImportsOnFileMove.enabled": "always",
     "workbench.editor.enablePreviewFromQuickOpen": false,
     "workbench.editor.enablePreview": false,
-    "editor.fontSize": 16,
-    "editor.fontFamily": "'IBM 3270 Narrow', 'monospace', monospace",
+    "editor.fontSize": 10,
     "workbench.editor.closeEmptyGroups": false,
     "editor.suggestSelection": "first",
     "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "java.configuration.checkProjectSettingsExclusions": false,
     "breadcrumbs.enabled": true,
+    "window.zoomLevel": 0,
     "vim.useCtrlKeys": false,
     "vim.easymotion": true,
     "vim.easymotionKeys": "qwerasdf",
@@ -39,6 +41,7 @@
     },
     "vim.foldfix": true,
     "angularConsole.useNVM": false,
+    "files.autoSave": "off",
     "sonarlint.rules": {
         "typescript:S1125": {
             "level": "off"
@@ -46,28 +49,6 @@
     },
     "javascript.updateImportsOnFileMove.enabled": "always",
     "editor.renderControlCharacters": false,
-    "terminal.integrated.fontFamily": "'IBM 3270', 'MesloLGS NF', monospace",
-    "terminal.integrated.fontSize": 18,
-    "editor.inlineSuggest.enabled": true,
-    "security.workspace.trust.untrustedFiles": "open",
-    "omnisharp.useGlobalMono": "always",
-    "html.autoCreateQuotes": false,
-    "html.autoClosingTags": true,
-    "csharp.format.enable": false,
-    "html.format.enable": false,
-    "auto-close-tag.enableAutoCloseSelfClosingTag": false,
-    "auto-close-tag.enableAutoCloseTag": false,
-    "workbench.colorTheme": "Aura Soft Dark",
-    "auto-close-tag.SublimeText3Mode": true,
-    "[json]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "editor.codeActionsOnSave": {
-        "source.fixAll.eslint": true
-      },
-    "eslint.validate": [
-        "javascript",
-        "typescript"
-    ],
-    "window.zoomLevel": -1
+    "terminal.integrated.fontFamily": "MesloLGS NF",
+    "terminal.integrated.fontSize": 10
 }

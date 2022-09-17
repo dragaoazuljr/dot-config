@@ -6,6 +6,10 @@
         "when": "!terminalFocus"
     },
     {
+        "key": "ctrl+[BracketLeft]",
+        "command": "workbench.action.quickOpenTerm"
+    },
+    {
         "key": "alt+q",
         "command": "workbench.action.focusPreviousGroup"
     },
@@ -38,6 +42,22 @@
         "command": "-workbench.action.focusThirdEditorGroup"
     },
     {
+        "key": "ctrl+shift+]",
+        "command": "-spotify.next"
+    },
+    {
+        "key": "ctrl+shift+[",
+        "command": "-spotify.previous"
+    },
+    {
+        "key": "ctrl+shift+;",
+        "command": "-spotify.volumeDown"
+    },
+    {
+        "key": "ctrl+shift+'",
+        "command": "-spotify.volumeUp"
+    },
+    {
         "key": "ctrl+shift+r",
         "command": "-workbench.action.quickOpenNavigatePreviousInRecentFilesPicker",
         "when": "inQuickOpen && inRecentFilesPicker"
@@ -66,7 +86,7 @@
         "when": "editorTextFocus && !editorReadonly"
     },
     {
-        "key": "ctrl+]",
+        "key": "ctrl+[",
         "command": "editor.action.indentLines",
         "when": "editorTextFocus && !editorReadonly"
     },
@@ -145,15 +165,5 @@
     {
         "key": "ctrl+shift+t",
         "command": "workbench.action.terminal.newInActiveWorkspace"
-    },
-    {
-        "key": "ctrl+[",
-        "command": "-extension.vim_ctrl+[",
-        "when": "editorTextFocus && vim.active && vim.use<C-[> && !inDebugRepl"
-    },
-    {
-        "key": "ctrl+]",
-        "command": "-extension.vim_ctrl+]",
-        "when": "editorTextFocus && vim.active && vim.use<C-]> && !inDebugRepl"
     }
 ]
