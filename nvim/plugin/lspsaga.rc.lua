@@ -53,3 +53,6 @@ keymap("n", "gd", "<cmd>Lspsaga peek_definition<CR>", { silent = true })
 
 -- Show cursor diagnostic
 keymap("n", "ge", "<cmd>Lspsaga show_cursor_diagnostics<CR>", { silent = true })
+
+-- Next diagnostcs
+keymap("n", "<leader>dd", "<cmd>Lspsaga diagnostic_jump_next<CR>", { silent = true })
