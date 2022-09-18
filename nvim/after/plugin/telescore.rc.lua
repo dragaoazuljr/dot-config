@@ -14,7 +14,8 @@ telescope.setup {
     mapping = {
       ['q'] = actions.close
     },
-    file_ignore_patterns = {"node_modules/", "^./.git/", "^.git/", ".angular/"}
+    file_ignore_patterns = {"node_modules/", "^./.git/", "^.git/", ".angular/"},
+    path_display={"truncate"}
   },
   extensions = {
     file_browser = {
