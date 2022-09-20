@@ -36,3 +36,6 @@ keymap.set('n', 's<left>', '<C-w>>', { silent = true}) -- Size tab right
 keymap.set('n', '<S-t>', ':term<CR>', {silent = true})
 -- get out of Terminal mode
 keymap.set('t', '<leader><Esc>', "<C-\\><C-n>")
+
+-- clear search higilight
+keymap.set('n', '<CR>', ':noh<CR><CR>')
