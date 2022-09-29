@@ -12,8 +12,20 @@ local on_attach = function(client, bufnr)
   end
 end
 
+local omnisharp_bin = os.getenv("HOME") .. "/.bin/run"
+local pid = vim.fn.getpid()
+
 nvim_lsp.tsserver.setup {
   on_attach = on_attach,
   filetypes = { "typescript", "typescriptreact", "typescript.tsx" },
   cmd = { "typescript-language-server", "--stdio" }
+}
+
+nvim_lsp.omnisharp.setup {
+  capabilities = require('cmp_nvim_lsp').update_capabilities(vim.lsp.protocol.make_client_capabilities()),
+  cmd = { omnisharp_bin, "--languageserver", "--hostPID", tostring(pid) },
+  filetypes = {"cs"},
+  on_attach = function (_, bufnr) 
+    vim.api.nvim_buf_set_option(bufnr, 'omnifunc', 'v:lua.vim.lsp.omnifunc')
+  end,
 }

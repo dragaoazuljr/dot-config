@@ -3,10 +3,6 @@ local keymap = vim.keymap
 -- delete whole word backwards
 keymap.set('i', '<C-h>', "<C-w>")
 
--- Indent/Outdent
-keymap.set('n', '<C-o>', 'v<lt>')
-keymap.set('n', '<C-i>', 'v<mt>')
-
 -- do not yank with d
 keymap.set('n', 'd', '"_d')
 
@@ -15,6 +11,7 @@ keymap.set('n', '<C-a>', 'gg<S-v>G')
 
 -- Save
 keymap.set('n', '<C-s>', ':w<Return>')
+keymap.set('i', '<C-s>', '<C-[>:w<Return>')
 
 -- Tabs
 keymap.set('n', '<C-n>', ':tabedit<Return>', { silent = true}) -- New tab
@@ -37,5 +34,8 @@ keymap.set('n', '<S-t>', ':term<CR>', {silent = true})
 -- get out of Terminal mode
 keymap.set('t', '<leader><Esc>', "<C-\\><C-n>")
 
--- clear search higilight
-keymap.set('n', '<CR>', ':noh<CR><CR>')
+--clear search highligh
+keymap.set('n', '<CR>', ':noh<CR><CR>', { silent = true })
+
+-- show current buffers
+keymap.set('n', '<C-b>', ':buffers<CR>')
