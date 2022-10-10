@@ -4,7 +4,7 @@ source /etc/os-release
 DISTRO=$PRETTY_NAME
 
 if [[ $DISTRO == *"Fedora"* ]]; then
-  sudo dnf install libstdc++-static ripgrep
+  sudo dnf install libstdc++-static ripgrep g++
 fi
 
 if [[ $DISTRO == *"Ubuntu"* ]]; then
