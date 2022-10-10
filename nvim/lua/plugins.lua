@@ -52,6 +52,5 @@ packer.startup(function(use)
       {'MunifTanjim/nui.nvim'}
     }
   }
-
 end)
 

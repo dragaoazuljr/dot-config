@@ -1,4 +1,7 @@
-require('fine-cmdline').setup({
+local status, fine_cmdline = pcall(require, 'fine-cmdline')
+if (not status) then return end
+
+fine_cmdline.setup({
   cmdline = {
     enable_keymaps = true,
     smart_history = true,
