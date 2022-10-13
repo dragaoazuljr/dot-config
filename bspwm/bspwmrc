@@ -137,14 +137,11 @@ bspdunst
 bspfloat &
 
 # Polybar theme 
-#bash $HOME/.config/bspwm/polybar/launch.sh
-
+bash $HOME/.config/bspwm/polybar/launch.sh
 
 PIDPOLYBAR=$('pidof' 'polybar')
 
 if [ -z "$PIDPOLYBAR" ] 
 then
   bspbar
-else 
-  bash $HOME/.config/bspwm/polybar/launch.sh
 fi

@@ -43,7 +43,10 @@ options="$random\n$default\n\n$theme_1\n$theme_2\n$theme_3\n$theme_4\n$theme_5\
 
 ## Apply theme
 set_style() {
-	# apply color-scheme
+  #kill polybar
+  killall -9 polybar
+
+  # apply color-scheme
 	cat "$THEMEDIR"/${1}.bash > "$THEMEDIR"/current.bash
 	echo -e "\n# Don't Delete This File" >> "$THEMEDIR"/current.bash
 	

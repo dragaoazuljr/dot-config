@@ -34,7 +34,7 @@ set_values() {
 
 ## Launch Polybar with selected style
 launch_bar() {
-	STYLE="nordic"
+	STYLE="forest"
 	bash "$HOME"/.config/openbox/polybar/"$STYLE"/launch.sh
 }
 

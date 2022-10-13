@@ -19,10 +19,10 @@ env:
 window:
   dimensions:
     columns: 82
-    lines: 24
+    lines: 25
 
   padding:
-    x: 10
+    x: 5
     y: 5
 
   decorations: full
