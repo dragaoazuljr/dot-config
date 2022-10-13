@@ -28,6 +28,7 @@ packer.startup(function(use)
     run = ':TSUpdate'
   }
   
+  -- Themes
   use 'baliestri/aura-theme'
   use 'folke/tokyonight.nvim'
 
@@ -52,5 +53,8 @@ packer.startup(function(use)
       {'MunifTanjim/nui.nvim'}
     }
   }
-end)
 
+  use 'norcalli/nvim-colorizer.lua'
+  use 'rktjmp/lush.nvim'
+  use 'shaunsingh/nord.nvim'
+end)
