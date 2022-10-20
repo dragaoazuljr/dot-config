@@ -1,0 +1,105 @@
+2022-10-19T15:02:56 [i] Pegasus alpha16-44-g8119fcec (2022-10-14)
+2022-10-19T15:02:56 [i] Running on Archcraft (x86_64, xcb)
+2022-10-19T15:02:56 [i] Qt version 5.15.6
+2022-10-19T15:02:56 [i] Program settings loaded (`/home/danillom/.config/pegasus-frontend/settings.txt`)
+2022-10-19T15:02:56 [i] Found locale `ar`
+2022-10-19T15:02:56 [i] Found locale `bs`
+2022-10-19T15:02:56 [i] Found locale `de`
+2022-10-19T15:02:56 [i] Found locale `en-GB`
+2022-10-19T15:02:56 [i] Found locale `en`
+2022-10-19T15:02:56 [i] Found locale `es`
+2022-10-19T15:02:56 [i] Found locale `fr`
+2022-10-19T15:02:56 [i] Found locale `hu`
+2022-10-19T15:02:56 [i] Found locale `ja`
+2022-10-19T15:02:56 [i] Found locale `ko`
+2022-10-19T15:02:56 [i] Found locale `lt`
+2022-10-19T15:02:56 [i] Found locale `nl`
+2022-10-19T15:02:56 [i] Found locale `pt-BR`
+2022-10-19T15:02:56 [i] Found locale `ru`
+2022-10-19T15:02:56 [i] Found locale `zh-TW`
+2022-10-19T15:02:56 [i] Found locale `zh`
+2022-10-19T15:02:56 [i] Locale set to `en`
+2022-10-19T15:02:56 [i] Found theme `Pegasus Grid` at `:/themes/pegasus-theme-grid/`
+2022-10-19T15:02:56 [i] Found theme `gameOS` at `/home/danillom/.config/pegasus-frontend/themes/gameOs/`
+2022-10-19T15:02:56 [i] SDL version 2.24.1
+2022-10-19T15:02:56 [i] Theme set to `gameOS` (`/home/danillom/.config/pegasus-frontend/themes/gameOs/`)
+2022-10-19T15:02:58 [i] Metafiles: Found `/media/Linux/roms/NEC - PC Engine CD - TurboGrafx-CD/metadata.pegasus.txt`
+2022-10-19T15:02:58 [i] Metafiles: Found `/media/Linux/roms/Nintendo - Game Boy Advance/metadata.pegasus.txt`
+2022-10-19T15:02:58 [i] Metafiles: Found `/media/Linux/roms/Nintendo - GameCube/metadata.pegasus.txt`
+2022-10-19T15:02:58 [w] Metafiles: `/media/Linux/roms/Nintendo - GameCube/metadata.pegasus.txt`, line 121: This file already belongs to a different game: `/media/Linux/roms/Nintendo - GameCube/Metal Gear Solid - The Twin Snakes (USA) (Disc 1).nkit.iso`
+2022-10-19T15:02:58 [w] Metafiles: `/media/Linux/roms/Nintendo - GameCube/metadata.pegasus.txt`, line 151: This file already belongs to a different game: `/media/Linux/roms/Nintendo - GameCube/Metal Gear Solid - The Twin Snakes (USA) (Disc 2).nkit.iso`
+2022-10-19T15:02:58 [i] Metafiles: Found `/media/Linux/roms/Nintendo - Nintendo 64/metadata.pegasus.txt`
+2022-10-19T15:02:58 [i] Metafiles: Found `/media/Linux/roms/Nintendo - Super Nintendo Entertainment System/metadata.pegasus.txt`
+2022-10-19T15:02:58 [e] Metafiles: `/media/Linux/roms/Nintendo - Super Nintendo Entertainment System/metadata.pegasus.txt`, line 1380: line starts with whitespace, but no attribute has been defined yet
+2022-10-19T15:02:58 [i] Metafiles: Found `/media/Linux/roms/Sega - Dreamcast/metadata.pegasus.txt`
+2022-10-19T15:02:58 [i] Metafiles: Found `/media/Linux/roms/Sega - Mega Drive - Genesis/metadata.pegasus.txt`
+2022-10-19T15:02:58 [e] Metafiles: `/media/Linux/roms/Sega - Mega Drive - Genesis/metadata.pegasus.txt`, line 15403: line starts with whitespace, but no attribute has been defined yet
+2022-10-19T15:02:58 [e] Metafiles: `/media/Linux/roms/Sega - Mega Drive - Genesis/metadata.pegasus.txt`, line 15404: line starts with whitespace, but no attribute has been defined yet
+2022-10-19T15:02:58 [e] Metafiles: `/media/Linux/roms/Sega - Mega Drive - Genesis/metadata.pegasus.txt`, line 15405: line starts with whitespace, but no attribute has been defined yet
+2022-10-19T15:02:58 [e] Metafiles: `/media/Linux/roms/Sega - Mega Drive - Genesis/metadata.pegasus.txt`, line 15406: line starts with whitespace, but no attribute has been defined yet
+2022-10-19T15:02:58 [e] Metafiles: `/media/Linux/roms/Sega - Mega Drive - Genesis/metadata.pegasus.txt`, line 15407: line starts with whitespace, but no attribute has been defined yet
+2022-10-19T15:02:58 [e] Metafiles: `/media/Linux/roms/Sega - Mega Drive - Genesis/metadata.pegasus.txt`, line 15408: line starts with whitespace, but no attribute has been defined yet
+2022-10-19T15:02:58 [e] Metafiles: `/media/Linux/roms/Sega - Mega Drive - Genesis/metadata.pegasus.txt`, line 15409: line starts with whitespace, but no attribute has been defined yet
+2022-10-19T15:02:58 [e] Metafiles: `/media/Linux/roms/Sega - Mega Drive - Genesis/metadata.pegasus.txt`, line 15410: line starts with whitespace, but no attribute has been defined yet
+2022-10-19T15:02:58 [e] Metafiles: `/media/Linux/roms/Sega - Mega Drive - Genesis/metadata.pegasus.txt`, line 15411: line starts with whitespace, but no attribute has been defined yet
+2022-10-19T15:02:58 [i] Metafiles: Found `/media/Linux/roms/Sega - Saturn/metadata.pegasus.txt`
+2022-10-19T15:02:58 [i] Metafiles: Found `/media/Linux/roms/Sony - PlayStation 2/metadata.pegasus.txt`
+2022-10-19T15:02:58 [e] Metafiles: `/media/Linux/roms/Sony - PlayStation 2/metadata.pegasus.txt`, line 378: line starts with whitespace, but no attribute has been defined yet
+2022-10-19T15:02:58 [i] Metafiles: Found `/media/Linux/roms/Sony - PlayStation Portable/metadata.pegasus.txt`
+2022-10-19T15:02:58 [i] Metafiles: Found `/media/Linux/roms/Sony - PlayStation/metadata.pegasus.txt`
+2022-10-19T15:02:58 [i] Metafiles: Found `/media/Linux/roms/Sony - Playstation 3/metadata.pegasus.txt`
+2022-10-19T15:02:58 [i] Metafiles: Finished searching in 96ms
+2022-10-19T15:02:58 [i] Gamepad: Connected device 0x0 (PS4 Controller)
+2022-10-19T15:02:58 [i] Media: Finished searching in 23ms
+2022-10-19T15:02:58 [i] Steam: Found installation at `/home/danillom/.local/share/Steam/`
+2022-10-19T15:02:58 [i] Steam: Found `/home/danillom/.local/share/Steam/config/config.vdf`
+2022-10-19T15:02:58 [i] Steam: Found `/home/danillom/.local/share/Steam/steamapps/libraryfolders.vdf`
+2022-10-19T15:02:58 [i] Steam: 4 games found
+2022-10-19T15:02:58 [i] Steam: Finished searching in 2ms
+2022-10-19T15:02:58 [i] GOG: 0 games found
+2022-10-19T15:02:58 [i] GOG: Finished searching in 0ms
+2022-10-19T15:02:58 [i] EmulationStation: No installation found
+2022-10-19T15:02:58 [i] EmulationStation: Finished searching in 0ms
+2022-10-19T15:02:58 [i] Logiqx: Finished searching in 7ms
+2022-10-19T15:02:58 [i] Lutris: No installation found
+2022-10-19T15:02:58 [i] Lutris: Finished searching in 0ms
+2022-10-19T15:02:58 [i] Skraper Assets: 0 assets found
+2022-10-19T15:02:58 [i] Skraper Assets: Finished searching in 4ms
+2022-10-19T15:02:58 [i] Favorites: Finished searching in 0ms
+2022-10-19T15:02:58 [i] Playtime: Finished searching in 1ms
+2022-10-19T15:02:58 [i] Waiting for online sources...
+2022-10-19T15:02:58 [i] Waiting for online sources took 0ms
+2022-10-19T152022-10-19T08:26:31 [i] Executing command: [`retroarch`,`-L`,`/home/danillom/.config/retroarch/cores/pcsx2_libretro.so`,`/media/Linux/roms/Sony - PlayStation 2/Devil May Cry (USA).chd`]
+2022-10-19T08:26:31 [i] Working directory: `/media/Linux/roms/Sony - PlayStation 2`
+2022-10-19T08:26:31 [i] Process 58944 started
+2022-10-19T08:26:31 [i] ----------------------------------------
+2022-10-19T15:05:40 [i] ----------------------------------------
+2022-10-19T15:05:40 [w] The external program has crashed
+2022-10-19T15:05:40 [w] qt.glx: qglx_findConfig: Failed to finding matching FBConfig for QSurfaceFormat(version 2.0, options QFlags<QSurfaceFormat::FormatOption>(), depthBufferSize 0, redBufferSize 1, greenBufferSize 1, blueBufferSize 1, alphaBufferSize -1, stencilBufferSize 0, samples -1, swapBehavior QSurfaceFormat::SingleBuffer, swapInterval 1, colorSpace QSurfaceFormat::DefaultColorSpace, profile  QSurfaceFormat::NoProfile)
+2022-10-19T15:05:40 [w] No XVisualInfo for format QSurfaceFormat(version 2.0, options QFlags<QSurfaceFormat::FormatOption>(), depthBufferSize 0, redBufferSize 1, greenBufferSize 1, blueBufferSize 1, alphaBufferSize -1, stencilBufferSize 0, samples -1, swapBehavior QSurfaceFormat::SingleBuffer, swapInterval 1, colorSpace QSurfaceFormat::DefaultColorSpace, profile  QSurfaceFormat::NoProfile)
+2022-10-19T15:05:40 [w] Falling back to using screens root_visual.
+2022-10-19T15:05:40 [w] The X11 connection broke: I/O error (code 1)
+ile
+2022-10-19T15:03:00 [w] libpng warning: iCCP: known incorrect sRGB profile
+2022-10-19T15:03:01 [i] Executing command: [`rpcs3.AppImage`,`--no-gui`,`/media/Linux/roms/Sony - Playstation 3/Metal Gear Solid 4 - Guns of the Patriots (USA) (En,Fr,De,Es,It) (v02.00)/PS3_GAME/USRDIR/mgs/MGS4.SELF`]
+2022-10-19T15:03:01 [i] Working directory: `/media/Linux/roms/Sony - Playstation 3/Metal Gear Solid 4 - Guns of the Patriots (USA) (En,Fr,De,Es,It) (v02.00)/PS3_GAME/USRDIR/mgs`
+2022-10-19T15:03:01 [i] Process 95663 started
+2022-10-19T15:03:01 [i] ----------------------------------------
+2022-10-19T15:04:10 [i] ----------------------------------------
+2022-10-19T15:04:10 [w] The external program has crashed
+2022-10-19T15:04:11 [w] libpng warning: iCCP: known incorrect sRGB profile
+2022-10-19T15:04:11 [w] libpng warning: iCCP: known incorrect sRGB profile
+2022-10-19T15:04:11 [w] libpng warning: iCCP: known incorrect sRGB profile
+2022-10-19T15:04:14 [w] libpng warning: iCCP: known incorrect sRGB profile
+2022-10-19T15:04:14 [w] Warning: "No decoder available for type 'video/x-h264, stream-format=(string)byte-stream, alignment=(string)au, level=(string)4, profile=(string)main, width=(int)1918, height=(int)540, framerate=(fraction)30/1, pixel-aspect-ratio=(fraction)1/1, chroma-format=(string)4:2:0, bit-depth-luma=(uint)8, bit-depth-chroma=(uint)8, colorimetry=(string)bt709, parsed=(boolean)true'."
+2022-10-19T15:04:14 [w] Error: "Your GStreamer installation is missing a plug-in."
+2022-10-19T15:04:14 [w] libpng2022-10-18T12:05:39 [i] Executing command: [`retroarch`,`-L`,`/home/danillom/.config/retroarch/cores/pcsx2_libretro.so`,`/media/Linux/roms/Sony - PlayStation 2/Grand Theft Auto - San Andreas (USA) (v1.03).chd`]
+2022-10-18T12:05:39 [i] Working directory: `/media/Linux/roms/Sony - PlayStation 2`
+2022-10-18T12:05:39 [i] Process 3033 started
+2022-10-18T12:05:39 [i] ----------------------------------------
+2022-10-19T15:05:47 [i] ----------------------------------------
+2022-10-19T15:05:47 [w] The external program has crashed
+2022-10-19T15:05:47 [w] qt.glx: qglx_findConfig: Failed to finding matching FBConfig for QSurfaceFormat(version 2.0, options QFlags<QSurfaceFormat::FormatOption>(), depthBufferSize 0, redBufferSize 1, greenBufferSize 1, blueBufferSize 1, alphaBufferSize -1, stencilBufferSize 0, samples -1, swapBehavior QSurfaceFormat::SingleBuffer, swapInterval 1, colorSpace QSurfaceFormat::DefaultColorSpace, profile  QSurfaceFormat::NoProfile)
+2022-10-19T15:05:47 [w] No XVisualInfo for format QSurfaceFormat(version 2.0, options QFlags<QSurfaceFormat::FormatOption>(), depthBufferSize 0, redBufferSize 1, greenBufferSize 1, blueBufferSize 1, alphaBufferSize -1, stencilBufferSize 0, samples -1, swapBehavior QSurfaceFormat::SingleBuffer, swapInterval 1, colorSpace QSurfaceFormat::DefaultColorSpace, profile  QSurfaceFormat::NoProfile)
+2022-10-19T15:05:47 [w] Falling back to using screens root_visual.
+2022-10-19T15:05:47 [w] The X11 connection broke: I/O error (code 1)

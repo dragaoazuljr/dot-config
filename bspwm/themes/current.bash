@@ -1,34 +1,34 @@
-# -----------------------------------------------------------------------------
+# ------------------------------------------------------------------------------
 # Copyright (C) 2020-2022 Aditya Shakya <adi1090x@gmail.com>
 # Everyone is permitted to copy and distribute copies of this file under GNU-GPL3
 #
-# Forest color scheme
-# -----------------------------------------------------------------------------
+# Nordic color scheme
+# ------------------------------------------------------------------------------
 
 # Wallpaper
-wallpaper='/usr/share/backgrounds/forest.jpg'
+wallpaper='/usr/share/backgrounds/nordic.jpg'
 
 # Special
-foreground='#C4C7C5'
-background='#222D32'
-cursor='#C4C7C5'
+background='#2E3440'
+foreground='#D8DEE9'
+cursor='#D8DEE9'
 
 # Colors
-color0='#263640'
-color1='#EC7875'
-color2='#61C766'
-color3='#FDD835'
-color4='#42A5F5'
-color5='#BA68C8'
-color6='#4DD0E1'
-color7='#bfbaac'
-color8='#4a697d'
-color9='#FB8784'
-color10='#70D675'
-color11='#FFE744'
-color12='#51B4FF'
-color13='#C979D7'
-color14='#5CDFF0'
-color15='#fdf6e3'
+color0='#3B4252'
+color1='#BF616A'
+color2='#A3BE8C'
+color3='#EBCB8B'
+color4='#81A1C1'
+color5='#B48EAD'
+color6='#88C0D0'
+color7='#E5E9F0'
+color8='#4C566A'
+color9='#BF616A'
+color10='#A3BE8C'
+color11='#EBCB8B'
+color12='#81A1C1'
+color13='#B48EAD'
+color14='#8FBCBB'
+color15='#ECEFF4'
 
 # Don't Delete This File

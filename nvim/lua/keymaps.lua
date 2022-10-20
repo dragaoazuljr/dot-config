@@ -10,8 +10,8 @@ keymap.set('n', 'd', '"_d')
 keymap.set('n', '<C-a>', 'gg<S-v>G')
 
 -- Save
-keymap.set('n', '<C-s>', ':w<Return>')
-keymap.set('i', '<C-s>', '<C-[>:w<Return>')
+keymap.set('n', '<C-s>', ':w<Return>', { silent = true })
+keymap.set('i', '<C-s>', '<C-[>:w<Return><Return>', { silent = true })
 
 -- Tabs
 keymap.set('n', '<C-n>', ':tabedit<Return>', { silent = true}) -- New tab

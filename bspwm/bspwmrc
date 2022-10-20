@@ -145,3 +145,12 @@ if [ -z "$PIDPOLYBAR" ]
 then
   bspbar
 fi
+
+# Moonlight
+
+killall -9 sunshine
+flatpak run dev.lizardbyte.sunshine &
+
+# AntimicroX
+
+antimicrox --hidden &

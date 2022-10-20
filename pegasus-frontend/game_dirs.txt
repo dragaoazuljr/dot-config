@@ -1,0 +1,12 @@
+/media/Linux/roms/Sony - PlayStation 2
+/media/Linux/roms/Sony - PlayStation Portable
+/media/Linux/roms/Nintendo - GameCube
+/media/Linux/roms/NEC - PC Engine CD - TurboGrafx-CD
+/media/Linux/roms/Nintendo - Super Nintendo Entertainment System
+/media/Linux/roms/Sony - PlayStation
+/media/Linux/roms/Nintendo - Nintendo 64
+/media/Linux/roms/Nintendo - Game Boy Advance
+/media/Linux/roms/Sega - Mega Drive - Genesis
+/media/Linux/roms/Sony - Playstation 3
+/media/Linux/roms/Sega - Dreamcast
+/media/Linux/roms/Sega - Saturn
