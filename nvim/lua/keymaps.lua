@@ -38,4 +38,7 @@ keymap.set('t', '<leader><Esc>', "<C-\\><C-n>")
 keymap.set('n', '<CR>', ':noh<CR><CR>', { silent = true })
 
 -- show current buffers
-keymap.set('n', '<C-b>', ':buffers<CR>')
+keymap.set('n', '<C-b>', ':Telescope buffers<CR>')
+
+--Neogen
+keymap.set("n", "<Leader>c", ":lua require('neogen').generate({ type = 'func'})<CR>", { noremap = true, silent = true})

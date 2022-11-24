@@ -57,4 +57,10 @@ packer.startup(function(use)
   use 'norcalli/nvim-colorizer.lua'
   use 'rktjmp/lush.nvim'
   use 'shaunsingh/nord.nvim'
+
+  -- neogen
+  use {
+    'danymat/neogen',
+    requires = 'nvim-treesitter/nvim-treesitter'
+  }
 end)

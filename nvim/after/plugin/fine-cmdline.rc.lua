@@ -36,4 +36,3 @@ if (not status) then return end
  })
  
  vim.api.nvim_set_keymap('n', ':', '<cmd>FineCmdline<CR>', {noremap = true})
- vim.api.nvim_set_keymap('n', '<Tab>', '<cmd>FineCmdline<CR>', {noremap = true})
