@@ -2,7 +2,7 @@ local status, saga = pcall(require, 'lspsaga')
 local keymap = vim.keymap.set
 if (not status) then return end
 
-saga.init_lsp_saga({
+saga.setup({
   server_filetype_map = {},
   code_action_keys = {
     quit = "q",
@@ -22,7 +22,6 @@ saga.init_lsp_saga({
     auto_preview = true,
     virt_text = '┃',
     jump_key = 'o',
-    -- auto refresh when change buffer
     auto_refresh = true,
   }, 
   finder_action_keys = {
