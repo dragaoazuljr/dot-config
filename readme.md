@@ -7,7 +7,7 @@ This neovim configuration is based heavily on a YouTube video by @devaslive (htt
 Before starting neovim, run nvim/install-dependencies.sh to install all node dependencies.
 
 ### FauxPilot
-This nvim config uses two forked repositories, FauxPilot and Copilot.vim, and changes them to work locally instead of calling Github servers. To make this work, clone the dragaoazuljr/fauxpilot repository, and then run ./setup.sh (requires Docker) to configure fauxpilot and download the necessary models. After that, just run ./launch.sh to start a Docker compose with the AI model loaded.
+This nvim config uses two forked repositories, FauxPilot and Copilot.vim, and changes them to work locally instead of calling Github servers. To make this work, clone the [dragaoazuljr/fauxpilot](https://github.com/dragaoazuljr/fauxpilot) repository, and then run `{fauxpilot-folder}/setup.sh` (requires Docker) to configure fauxpilot and download the necessary models. After that, just run `{fauxpilot-folder}/launch.sh` to start a Docker compose with the AI model loaded.
 
 ### Copilot.vim
 For this package, the endpoint that the plugin calls has been changed to go to FauxPilot instead of Github Copilot servers. The plugin still has all the telemetry, and disabling it is not yet possible.
@@ -15,4 +15,4 @@ For this package, the endpoint that the plugin calls has been changed to go to F
 This will be installed with `:PackerInstall` command.
 
 ## VScode
-To install extensions listed on instaled-extensions.md, run code/install-extensions.sh. Commands to extract currently installed extensions are available in the get-extensions-commands.md file.
+To install extensions listed on instaled-extensions.md, run `code/install-extensions.sh`. Commands to extract currently installed extensions are available in the `get-extensions-commands.md` file.
