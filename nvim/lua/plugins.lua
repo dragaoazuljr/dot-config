@@ -31,6 +31,7 @@ packer.startup(function(use)
   -- Themes
   use 'baliestri/aura-theme'
   use 'folke/tokyonight.nvim'
+  use 'shaunsingh/nord.nvim'
 
   use 'jose-elias-alvarez/null-ls.nvim' -- Use neovim as Language Server
   use 'MunifTanjim/prettier.nvim' -- prettier
@@ -56,11 +57,12 @@ packer.startup(function(use)
 
   use 'norcalli/nvim-colorizer.lua'
   use 'rktjmp/lush.nvim'
-  use 'shaunsingh/nord.nvim'
 
   -- neogen
   use {
     'danymat/neogen',
     requires = 'nvim-treesitter/nvim-treesitter'
   }
+
+	use 'github/copilot.vim'
 end)
