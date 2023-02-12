@@ -1,13 +1,18 @@
 # Dotfiles config
-My personal dot files config for IDEs like vscode, neovim. And some useful scripts.
+This is a repository of my personal dot file configurations for IDEs such as vscode and neovim, as well as some useful scripts
 
 ## Neovim
-Neovim configuration heavily based on @devaslive youtube video: https://youtu.be/ajmK0ZNcM4Q
+This neovim configuration is based heavily on a YouTube video by @devaslive (https://youtu.be/ajmK0ZNcM4Q).
 
-Run `nvim/install-dependencies.sh` before starting neovim to install all node dependencies.
+Before starting neovim, run nvim/install-dependencies.sh to install all node dependencies.
+
+### FauxPilot
+This nvim config uses two forked repositories, FauxPilot and Copilot.vim, and changes them to work locally instead of calling Github servers. To make this work, clone the dragaoazuljr/fauxpilot repository, and then run ./setup.sh (requires Docker) to configure fauxpilot and download the necessary models. After that, just run ./launch.sh to start a Docker compose with the AI model loaded.
+
+### Copilot.vim
+For this package, the endpoint that the plugin calls has been changed to go to FauxPilot instead of Github Copilot servers. The plugin still has all the telemetry, and disabling it is not yet possible.
+
+This will be installed with `:PackerInstall` command.
 
 ## VScode
-
-Run `code/install-extensions.sh` to install extensions listed on `instaled-extensions.md`
-
-To extract current installed extensions use the commands on the `get-extensions-commands.md` file.
+To install extensions listed on instaled-extensions.md, run code/install-extensions.sh. Commands to extract currently installed extensions are available in the get-extensions-commands.md file.

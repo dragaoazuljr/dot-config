@@ -64,7 +64,6 @@ telescope.setup {
   extensions = {
     file_browser = {
       hijack_netrw = true,
-			theme = 'dropdown',
       mappings = {
         -- custom mode mappings
         ['i'] = {

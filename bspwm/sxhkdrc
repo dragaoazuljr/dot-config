@@ -116,7 +116,7 @@ ctrl + shift + {q,r}
 	bspc {quit,wm -r}
 	
 # Split horizontal, vertical or cancel
-super + {h,v,q}
+super + {v,h,q}
 	bspc node -p {east,south,cancel}
 
 # Preselect the ratio
@@ -189,5 +189,9 @@ super + shift + {Left,Down,Up,Right}
 #change keyboard layout
 ctrl + shift + space
   sh ~/.config/scripts/change_keyboard_layout.sh
+
+# Menu key
+#alt + Down
+#  xte "key Super_L"
 
 ##---------- EOF ----------##

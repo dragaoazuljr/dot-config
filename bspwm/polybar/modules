@@ -155,7 +155,7 @@ animation-charging-framerate = 750
 [module/bspwm]
 type = internal/bspwm
 
-pin-workspaces = true
+pin-workspaces = false
 inline-mode = false
 
 enable-click = true
@@ -167,13 +167,8 @@ fuzzy-match = true
 ; ws-icon-[0-9]+ = label;icon
 ; Note that the label needs to correspond with the bspwm workspace name
 ws-icon-0 = I;
-ws-icon-1 = II;
-ws-icon-2 = III;
-ws-icon-3 = IV;
-ws-icon-4 = V;
-ws-icon-5 = VI;
-ws-icon-6 = VII;
-ws-icon-7 = VIII;
+ws-icon-1 = II;
+ws-icon-3 = III;
 ws-icon-default = 
 
 format = <label-state>
@@ -324,6 +319,77 @@ content = ◆
 content-background = ${color.BACKGROUND}
 content-foreground = ${color.BLACK}
 content-padding = 2
+
+;; _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
+
+[module/cpu]
+type = internal/cpu
+
+; Seconds to sleep between updates
+; Default: 1
+interval = 0.5
+
+; Available tags:
+;   <label> (default)
+;   <bar-load>
+;   <ramp-load>
+;   <ramp-coreload>
+;;format = <label> <ramp-coreload>
+format = <label>
+format-prefix = 
+format-prefix-font = 2
+format-prefix-foreground = ${color.RED}
+format-background = ${color.BG}
+format-padding = 1
+
+; Available tokens:
+;   %percentage% (default) - total cpu load averaged over all cores
+;   %percentage-sum% - Cumulative load on all cores
+;   %percentage-cores% - load percentage for each core
+;   %percentage-core[1-9]% - load percentage for specific core
+label = " %percentage%%"
+
+; Spacing between individual per-core ramps
+;;ramp-coreload-spacing = 1
+;;ramp-coreload-0 = 
+;;ramp-coreload-1 = 
+;;ramp-coreload-2 = 
+;;ramp-coreload-3 = 
+;;ramp-coreload-4 = 
+
+;; _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
+
+[module/used-memory]
+type = custom/script
+
+exec = free -m | sed -n 's/^Mem:\s\+[0-9]\+\s\+\([0-9]\+\)\s.\+/\1/p'
+
+tail = true
+interval = 5
+
+format = <label>
+format-background = ${color.BGL}
+
+format-prefix = 
+format-prefix-font = 2
+format-prefix-foreground = ${color.BLUE}
+
+label = " %output% MB"
+
+click-left = alacritty -e "top" &
+
+;; _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
+
+[module/gpu]
+type = custom/script
+format-prefix = 
+format-prefix-font = 2
+format-prefix-foreground = ${color.RED}
+interval = 5
+
+exec = ~/.config/scripts/system-nvidia-smi.sh
+
+label = " %output%%"
 
 ;; _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
 ;;	    __________  ______

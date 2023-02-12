@@ -48,12 +48,14 @@ packer.startup(function(use)
 
   use 'lewis6991/gitsigns.nvim'
 
-  use {
-    'VonHeikemen/fine-cmdline.nvim',
-    requires = {
-      {'MunifTanjim/nui.nvim'}
-    }
-  }
+ -- use {
+ --   'VonHeikemen/fine-cmdline.nvim',
+ --   requires = {
+ --     {'MunifTanjim/nui.nvim'}
+ --   }
+ -- }
+	
+	use 'gelguy/wilder.nvim'
 
   use 'norcalli/nvim-colorizer.lua'
   use 'rktjmp/lush.nvim'

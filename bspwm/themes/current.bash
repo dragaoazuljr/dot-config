@@ -1,34 +1,34 @@
-# ------------------------------------------------------------------------------
+# -----------------------------------------------------------------------------
 # Copyright (C) 2020-2022 Aditya Shakya <adi1090x@gmail.com>
 # Everyone is permitted to copy and distribute copies of this file under GNU-GPL3
 #
-# Nordic color scheme
-# ------------------------------------------------------------------------------
+# Cyberpunk color scheme
+# -----------------------------------------------------------------------------
 
 # Wallpaper
-wallpaper='/usr/share/backgrounds/nordic.jpg'
+wallpaper='/usr/share/backgrounds/cyberpunk.jpg'
 
 # Special
-background='#2E3440'
-foreground='#D8DEE9'
-cursor='#D8DEE9'
+foreground='#cdc7d3'
+background='#030315'
+cursor='#cdc7d3'
 
 # Colors
-color0='#3B4252'
-color1='#BF616A'
-color2='#A3BE8C'
-color3='#EBCB8B'
-color4='#81A1C1'
-color5='#B48EAD'
-color6='#88C0D0'
-color7='#E5E9F0'
-color8='#4C566A'
-color9='#BF616A'
-color10='#A3BE8C'
-color11='#EBCB8B'
-color12='#81A1C1'
-color13='#B48EAD'
-color14='#8FBCBB'
-color15='#ECEFF4'
+color0='#19192D'
+color1='#553B88'
+color2='#364995'
+color3='#60559D'
+color4='#9F6495'
+color5='#CB7192'
+color6='#6398C6'
+color7='#cdc7d3'
+color8='#8f8b93'
+color9='#553B88'
+color10='#364995'
+color11='#60559D'
+color12='#9F6495'
+color13='#CB7192'
+color14='#6398C6'
+color15='#cdc7d3'
 
 # Don't Delete This File
