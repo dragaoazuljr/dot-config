@@ -48,3 +48,15 @@ keymap.set("n", "<Leader>i", "gg=G")
 
 --Paste without yank deleted text
 keymap.set("n", "p", "P")
+
+-- Copilot tab input
+keymap.set("i", "<Tab>", function ()
+local copilot = require('copilot.suggestion')
+	if copilot.is_visible() then
+		copilot.accept_line()
+	else 
+		local keys = vim.api.nvim_replace_termcodes('<Tab>', true, false, true)
+		vim.api.nvim_feedkeys(keys, 'n', false)
+	end
+end,
+{ noremap = true, silent = true})

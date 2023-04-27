@@ -27,7 +27,7 @@ cmp.setup({
     end,
     ['<S-Tab>'] = function(fallback)
       if cmp.visible() then
-        cmp.select_prev_item()
+				cmp.select_prev_item()
       else 
         fallback()
       end
@@ -41,6 +41,14 @@ cmp.setup({
     format = lspkind.cmp_format({ wirth_text = false, maxwidth = 50 })
   }
 })
+
+cmp.event:on("menu_opened", function()
+  vim.b.copilot_suggestion_hidden = true
+end)
+
+cmp.event:on("menu_closed", function()
+  vim.b.copilot_suggestion_hidden = false
+end)
 
 vim.cmd [[
   set completeopt=menuone,noinsert,noselect

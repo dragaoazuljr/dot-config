@@ -20,11 +20,11 @@ copilot.setup {
   suggestion = {
     enabled = true,
     auto_trigger = true,
-    debounce = 150,
+    debounce = 300,
     keymap = {
-      accept = "<Tab>",
+      accept = false,
       accept_word = false,
-      accept_line = false,
+      accept_line = "<M-\\>",
       next = "<M-]>",
       prev = "<M-[>",
       dismiss = "<C-]>",
