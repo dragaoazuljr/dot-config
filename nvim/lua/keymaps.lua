@@ -42,3 +42,9 @@ keymap.set('n', '<C-b>', ':Telescope buffers<CR>')
 
 --Neogen
 keymap.set("n", "<Leader>c", ":lua require('neogen').generate({ type = 'func'})<CR>", { noremap = true, silent = true})
+
+--Indent file
+keymap.set("n", "<Leader>i", "gg=G")
+
+--Paste without yank deleted text
+keymap.set("n", "p", "P")

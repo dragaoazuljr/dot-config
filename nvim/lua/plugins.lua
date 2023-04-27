@@ -66,5 +66,9 @@ packer.startup(function(use)
     requires = 'nvim-treesitter/nvim-treesitter'
   }
 
-	use 'dragaoazuljr/copilot.vim'
+	-- Copilot.vim
+	-- use 'dragaoazuljr/copilot.vim'
+	
+	-- Copilot.lua
+	use 'dragaoazuljr/copilot.lua'
 end)
