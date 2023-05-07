@@ -14,7 +14,7 @@ include-file = ~/.config/bspwm/polybar/colors
 include-file = ~/.config/bspwm/polybar/modules
 
 [bar/main]
-monitor = DP-0
+monitor = DP-4
 monitor-strict = false
 override-redirect = false
 
@@ -49,7 +49,7 @@ font-3 = "Iosevka:style=bold:"size=12;3"
 
 modules-left = mod sep bspwm
 modules-center = mpd
-modules-right = volume sep ethernet sep cpu sep used-memory sep gpu sep date
+modules-right =  ethernet sep volume sep cpu sep used-memory sep gpu sep gpu-temp sep date
 
 separator =
 spacing = 0

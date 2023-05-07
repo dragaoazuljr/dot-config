@@ -17,6 +17,9 @@ export PATH="${PATH}:$HOME/.config/bspwm/bin"
 export _JAVA_AWT_WM_NONREPARENTING=1
 #wmname LG3D
 
+# Controller Profile
+export CONTROLLER_PROFILE="xbox"
+
 ## Current theme ---------------------------------------------#
 
 ## Load current theme files to get colors for bspwm
@@ -158,4 +161,8 @@ sunshine &
 
 # Steam
 
-steam -silent &
+#steam -silent &
+
+#GreenWithEnvy
+
+gwe --hide-window &

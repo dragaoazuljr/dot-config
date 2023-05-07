@@ -6,7 +6,7 @@
 # -----------------------------------------------------------------------------
 
 # Wallpaper
-wallpaper='/usr/share/backgrounds/cyberpunk.jpg'
+wallpaper='/usr/share/backgrounds/pexels-tuesday-temptation-3780104.jpg'
 
 # Special
 foreground='#cdc7d3'

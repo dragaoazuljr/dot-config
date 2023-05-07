@@ -1,0 +1,67 @@
+[2023:05:07:10:21:12]: Info: Sunshine version: 0.19.1
+[2023:05:07:10:21:12]: Error: Couldn't expose some/all drm planes for card: /dev/dri/card0
+[2023:05:07:10:21:12]: Info: Detecting monitors
+[2023:05:07:10:21:13]: Info: Detected monitor 0: HDMI-0, connected: true
+[2023:05:07:10:21:13]: Info: Detected monitor 1: DP-0, connected: false
+[2023:05:07:10:21:13]: Info: Detected monitor 2: DP-1, connected: true
+[2023:05:07:10:21:13]: Info: Detected monitor 3: DP-2, connected: false
+[2023:05:07:10:21:13]: Info: Detected monitor 4: DP-3, connected: true
+[2023:05:07:10:21:13]: Info: Detected monitor 5: DP-4, connected: true
+[2023:05:07:10:21:13]: Info: Detected monitor 6: DP-5, connected: false
+[2023:05:07:10:21:13]: Info: // Testing for available encoders, this may generate errors. You can safely ignore those errors. //
+[2023:05:07:10:21:13]: Info: Trying encoder [nvenc]
+[2023:05:07:10:21:13]: Info: Screencasting with X11
+[2023:05:07:10:21:13]: Info: Configuring selected monitor (2) to stream
+[2023:05:07:10:21:13]: Info: Streaming display: DP-1 with res 1920x1080 offset by 4480x1080
+[2023:05:07:10:21:13]: Info: SDR color coding [Rec. 601]
+[2023:05:07:10:21:13]: Info: Color range: [JPEG]
+[2023:05:07:10:21:13]: Info: System tray created
+[2023:05:07:10:21:14]: Info: Screencasting with X11
+[2023:05:07:10:21:14]: Info: Configuring selected monitor (2) to stream
+[2023:05:07:10:21:14]: Info: Streaming display: DP-1 with res 1920x1080 offset by 4480x1080
+[2023:05:07:10:21:14]: Info: SDR color coding [Rec. 601]
+[2023:05:07:10:21:14]: Info: Color range: [JPEG]
+[2023:05:07:10:21:14]: Info: Screencasting with X11
+[2023:05:07:10:21:14]: Info: Configuring selected monitor (2) to stream
+[2023:05:07:10:21:14]: Info: Streaming display: DP-1 with res 1920x1080 offset by 4480x1080
+[2023:05:07:10:21:14]: Info: SDR color coding [Rec. 601]
+[2023:05:07:10:21:14]: Info: Color range: [JPEG]
+[2023:05:07:10:21:14]: Info: Screencasting with X11
+[2023:05:07:10:21:14]: Info: Configuring selected monitor (2) to stream
+[2023:05:07:10:21:14]: Info: Streaming display: DP-1 with res 1920x1080 offset by 4480x1080
+[2023:05:07:10:21:14]: Info: SDR color coding [Rec. 601]
+[2023:05:07:10:21:14]: Info: Color range: [JPEG]
+[2023:05:07:10:21:15]: Info: Screencasting with X11
+[2023:05:07:10:21:15]: Info: Configuring selected monitor (2) to stream
+[2023:05:07:10:21:15]: Info: Streaming display: DP-1 with res 1920x1080 offset by 4480x1080
+[2023:05:07:10:21:15]: Info: SDR color coding [Rec. 601]
+[2023:05:07:10:21:15]: Info: Color range: [JPEG]
+[2023:05:07:10:21:15]: Info: Screencasting with X11
+[2023:05:07:10:21:15]: Info: Configuring selected monitor (2) to stream
+[2023:05:07:10:21:15]: Info: Streaming display: DP-1 with res 1920x1080 offset by 4480x1080
+[2023:05:07:10:21:15]: Info: SDR color coding [Rec. 709]
+[2023:05:07:10:21:15]: Info: Color range: [JPEG]
+[2023:05:07:10:21:15]: Error: Could not open codec [h264_nvenc]: Function not implemented
+[2023:05:07:10:21:15]: Info: Screencasting with X11
+[2023:05:07:10:21:15]: Info: Configuring selected monitor (2) to stream
+[2023:05:07:10:21:15]: Info: Streaming display: DP-1 with res 1920x1080 offset by 4480x1080
+[2023:05:07:10:21:15]: Info: SDR color coding [Rec. 709]
+[2023:05:07:10:21:15]: Info: Color range: [JPEG]
+[2023:05:07:10:21:16]: Info: Screencasting with X11
+[2023:05:07:10:21:16]: Info: Configuring selected monitor (2) to stream
+[2023:05:07:10:21:16]: Info: Streaming display: DP-1 with res 1920x1080 offset by 4480x1080
+[2023:05:07:10:21:16]: Info: SDR color coding [Rec. 601]
+[2023:05:07:10:21:16]: Info: Color range: [JPEG]
+[2023:05:07:10:21:16]: Info: Screencasting with X11
+[2023:05:07:10:21:16]: Info: Configuring selected monitor (2) to stream
+[2023:05:07:10:21:16]: Info: Streaming display: DP-1 with res 1920x1080 offset by 4480x1080
+[2023:05:07:10:21:16]: Info: SDR color coding [Rec. 601]
+[2023:05:07:10:21:16]: Info: Color range: [JPEG]
+[2023:05:07:10:21:16]: Warning: nvenc: hevc: replacing nalu prefix data
+[2023:05:07:10:21:16]: Info: 
+[2023:05:07:10:21:16]: Info: // Ignore any errors mentioned above, they are not relevant. //
+[2023:05:07:10:21:16]: Info: 
+[2023:05:07:10:21:16]: Info: Found encoder nvenc: [h264_nvenc, hevc_nvenc]
+[2023:05:07:10:21:16]: Info: Adding avahi service Sunshine
+[2023:05:07:10:21:16]: Info: Configuration UI available at [https://localhost:47990]
+[2023:05:07:10:21:17]: Info: Avahi service Sunshine successfully established.

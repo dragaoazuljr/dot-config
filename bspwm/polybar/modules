@@ -390,6 +390,18 @@ interval = 5
 exec = ~/.config/scripts/system-nvidia-smi.sh
 
 label = " %output%%"
+;; _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
+
+[module/gpu-temp]
+type = custom/script
+format-prefix = 
+format-prefix-font = 2
+format-prefix-foreground = ${color.RED}
+interval = 5
+
+exec = ~/.config/scripts/gpu-temp.sh
+
+label = " %output%C"
 
 ;; _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
 ;;	    __________  ______

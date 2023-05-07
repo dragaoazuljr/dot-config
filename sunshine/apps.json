@@ -1,0 +1,33 @@
+{
+	"env":{ 
+		"PATH":"$(PATH)",
+		"CONTROLLER_PROFILE": "controler"
+	},
+	"apps":[
+    {
+      "name":"Low Res Desktop",
+      "prep-cmd":[
+      { "do":"xrandr --output DP-1 --mode 1920x1080", "undo":"xrandr --output DP-1 --off" }
+      ]
+    },
+    {
+      "name":"Steam",
+
+      "output":"steam.txt",
+      "detached":["setsid steam steam://open/bigpicture"],
+			"prep-cmd": [{
+				"do": "bspc monitor -f 4", "undo": "",
+				"do": "bash /home/danillom/.config/scripts/change-audio-sink.sh 'chrome'", "undo": ""
+			}],
+      "image-path":"./assets/steam.png"
+    },
+    {
+      "name": "PEGASUS",
+      "cmd": "pegasus-fe",
+			"prep-cmd": [{
+				"do": "bspc monitor -f 4", "undo": "",
+				"do": "bash /home/danillom/.config/scripts/change-audio-sink.sh 'chrome'", "undo": ""
+			}]
+    }
+	]
+}
