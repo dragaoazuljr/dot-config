@@ -90,3 +90,7 @@ vim.keymap.set('n', '<C-f>', '<cmd>lua require("telescope.builtin").live_grep({ 
 
 -- File Browser
 vim.keymap.set('n', '<leader>f', '<cmd>lua require("telescope").extensions.file_browser.file_browser({ path = "%:p:h", cwd = telescope_buffer_dir(), respect_git_ignore = false, hidden = true, grouped = true, previewer = false, inital_mode = "normal" })<cr>', opts)
+
+-- Resume last Search
+vim.keymap.set('n', '<C-P>', '<cmd>lua require("telescope.builtin").resume {}<cr>', opts)
+

@@ -14,7 +14,7 @@ null_ls.setup {
     -- null_ls.builtins.diagnostics.eslint,
     null_ls.builtins.diagnostics.eslint.with({
       root_dir = require("null-ls.utils").root_pattern(".null-ls-root", "Makefile", ".eslintrc"),
-			filetypes = { "typescript", "typescriptreact", "vue" }
+			filetypes = { "typescriptreact", "vue" }
 			}),
     null_ls.builtins.diagnostics.fish
 	}
