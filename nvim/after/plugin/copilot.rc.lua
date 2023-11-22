@@ -22,9 +22,9 @@ copilot.setup {
     auto_trigger = true,
     debounce = 300,
     keymap = {
-      accept = false,
+      accept = "<M-\\>",
       accept_word = false,
-      accept_line = "<M-\\>",
+      accept_line = false,
       next = "<M-]>",
       prev = "<M-[>",
       dismiss = "<C-]>",
@@ -39,6 +39,8 @@ copilot.setup {
 		html = true,
 		dockerfile = true,
 		css = true,
+		java = true,
+		lua = true,
     ["*"] = false,
   },
   copilot_node_command = 'node', -- Node.js version must be > 16.x

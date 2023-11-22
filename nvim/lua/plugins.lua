@@ -70,5 +70,11 @@ packer.startup(function(use)
 	-- use 'dragaoazuljr/copilot.vim'
 	
 	-- Copilot.lua
-	use 'dragaoazuljr/copilot.lua'
+	-- use 'dragaoazuljr/copilot.lua'
+	
+	use 'zbirenbaum/copilot.lua'
+	-- use { 'zbirenbaum/copilot-cmp', after = { "copilot.lua" }, config = function () require("copilot_cmp").setup() end}
+
+	--Java
+	use 'mfussenegger/nvim-jdtls'
 end)
