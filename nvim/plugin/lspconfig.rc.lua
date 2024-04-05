@@ -21,6 +21,8 @@ nvim_lsp.tsserver.setup {
   cmd = { "typescript-language-server", "--stdio" }
 }
 
+nvim_lsp.pyright.setup {}
+
 -- nvim_lsp.omnisharp.setup {
 --   capabilities = require('cmp_nvim_lsp').update_capabilities(vim.lsp.protocol.make_client_capabilities()),
 --   cmd = { omnisharp_bin, "--languageserver", "--hostPID", tostring(pid) },
