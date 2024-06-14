@@ -60,3 +60,6 @@ local copilot = require('copilot.suggestion')
 	end
 end,
 { noremap = true, silent = true})
+
+-- find related method
+keymap.set("n", "<M-f>", "vwhy<C-f><Esc><S-C-v>")

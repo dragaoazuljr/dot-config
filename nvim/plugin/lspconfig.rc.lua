@@ -23,6 +23,28 @@ nvim_lsp.tsserver.setup {
 
 nvim_lsp.pyright.setup {}
 
+local on_attach_go = function(client, bufnr)
+  -- Enable completion triggered by <c-x><c-o>
+  vim.api.nvim_buf_set_option(bufnr, 'omnifunc', 'v:lua.vim.lsp.omnifunc')
+end
+
+nvim_lsp.gopls.setup({
+	on_attach = on_attach_go,
+  settings = {
+    gopls = {
+      analyses = {
+        unusedparams = true,
+      },
+      staticcheck = true,
+      gofumpt = true,
+    },
+  },
+})
+
+--PHP
+nvim_lsp.phpactor.setup{}
+
+
 -- nvim_lsp.omnisharp.setup {
 --   capabilities = require('cmp_nvim_lsp').update_capabilities(vim.lsp.protocol.make_client_capabilities()),
 --   cmd = { omnisharp_bin, "--languageserver", "--hostPID", tostring(pid) },
