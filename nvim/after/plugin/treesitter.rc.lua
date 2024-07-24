@@ -16,6 +16,7 @@ ts.setup {
     'css',
     'lua',
     'typescript',
-    'javascript'
+    'javascript',
+		'java',
   }
 }

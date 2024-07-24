@@ -76,7 +76,13 @@ packer.startup(function(use)
 	-- use { 'zbirenbaum/copilot-cmp', after = { "copilot.lua" }, config = function () require("copilot_cmp").setup() end}
 
 	--Java
-	use 'mfussenegger/nvim-jdtls'
+	use 'mfussenegger/nvim-dap'
+	use {
+		'mfussenegger/nvim-jdtls',
+		dependencies = {
+			'mfussenegger/nvim-dap'
+		}
+	}
 
 	--PHP
 	use {

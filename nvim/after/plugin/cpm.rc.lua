@@ -41,7 +41,7 @@ cmp.setup({
   }),
   formatting = {
     format = lspkind.cmp_format({ wirth_text = false, maxwidth = 50 })
-  }
+  },
 })
 
 cmp.event:on("menu_opened", function()
