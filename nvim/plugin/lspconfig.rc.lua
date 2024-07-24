@@ -44,6 +44,27 @@ nvim_lsp.gopls.setup({
 --PHP
 nvim_lsp.phpactor.setup{}
 
+--Java
+--
+-- create env var to use lombok 
+-- export JDTLS_JVM_ARGS="-javaagent:$HOME/.local/share/java/lombok.jar"
+
+local project_name = vim.fn.fnamemodify(vim.fn.getcwd(), ':p:h:t')
+
+local workspace_dir = '/home/danillom/projects/' .. project_name
+--                                               ^^
+--                                               string concattenation in Lua
+local config = {
+    cmd = {
+			'jdtls',
+			"-data", workspace_dir
+		},
+    root_dir = vim.fs.dirname(vim.fs.find({'gradlew', '.git', 'mvnw'}, { upward = true })[1]),
+}
+
+
+nvim_lsp.jdtls.setup{config}
+
 
 -- nvim_lsp.omnisharp.setup {
 --   capabilities = require('cmp_nvim_lsp').update_capabilities(vim.lsp.protocol.make_client_capabilities()),

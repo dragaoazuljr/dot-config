@@ -43,6 +43,7 @@ copilot.setup {
 		lua = true,
 		python = true,
 		go = true,
+		php = true,
     ["*"] = false,
   },
   copilot_node_command = 'node', -- Node.js version must be > 16.x
