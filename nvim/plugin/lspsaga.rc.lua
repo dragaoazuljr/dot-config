@@ -48,7 +48,10 @@ keymap({"n", "i"}, "<C-k>", "<cmd>Lspsaga hover_doc<CR>", { noremap = true, sile
 keymap("n", "gr", "<cmd>Lspsaga rename<CR>", { silent = true })
 
 -- Peek Definition
-keymap("n", "gd", "<cmd>Lspsaga peek_definition<CR>", { silent = true })
+keymap("n", "gD", "<cmd>Lspsaga peek_definition<CR>", { silent = true })
+
+-- Go to Definition
+keymap("n", "gd", "<cmd>Lspsaga goto_definition<CR>", { silent = true })
 
 -- Show cursor diagnostic
 keymap("n", "ge", "<cmd>Lspsaga show_cursor_diagnostics<CR>", { silent = true })

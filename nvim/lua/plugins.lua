@@ -72,7 +72,7 @@ packer.startup(function(use)
 	-- Copilot.lua
 	-- use 'dragaoazuljr/copilot.lua'
 	
-	use 'zbirenbaum/copilot.lua'
+	-- use 'zbirenbaum/copilot.lua'
 	-- use { 'zbirenbaum/copilot-cmp', after = { "copilot.lua" }, config = function () require("copilot_cmp").setup() end}
 
 	use 'huggingface/llm.nvim'

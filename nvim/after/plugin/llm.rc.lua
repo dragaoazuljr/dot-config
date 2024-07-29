@@ -4,7 +4,7 @@ if (not status) then return end
 llm.setup({
 	backend = "ollama",
 	model = "codeqwen:code",
-	context_window = 4096,
+	context_window = 8192,
 	enable_suggestions_on_startup = true,
   enable_suggestions_on_files = "*",
 	url = "http://localhost:11434",

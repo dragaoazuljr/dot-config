@@ -24,3 +24,6 @@ vim.opt.si = true -- Smart indent
 vim.opt.wrap = false
 vim.opt.path:append { '**' } -- Finding files recursive
 vim.opt.wildignore:append { '*/node_modules/*' }
+
+vim.opt.signcolumn = 'yes'	
+
