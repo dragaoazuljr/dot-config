@@ -3,7 +3,7 @@ if (not status) then return end
 
 copilot.setup {
 	panel = {
-    enabled = true,
+    enabled = false,
     auto_refresh = false,
     keymap = {
       jump_prev = "[[",
@@ -18,16 +18,16 @@ copilot.setup {
     },
   },
   suggestion = {
-    enabled = true,
+    enabled = false,
     auto_trigger = true,
     debounce = 300,
     keymap = {
       accept = "<M-\\>",
       accept_word = false,
       accept_line = false,
-      next = "<M-]>",
-      prev = "<M-[>",
-      dismiss = "<C-]>",
+      -- next = "<M-]>",
+      -- prev = "<M-[>",
+      -- dismiss = "<C-]>",
     },
   },
   filetypes = {
