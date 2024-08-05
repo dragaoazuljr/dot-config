@@ -1,0 +1,167 @@
+version: '3.7'
+
+services:
+  postgres-cms:
+    image: postgres:12.1
+    container_name: postgres-cms
+    volumes:
+      - ${HOME}/data/postgres:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+    environment:
+      - POSTGRES_MULTIPLE_DATABASES=mmp5db
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=hades2020!
+
+  pgadmin-cms:
+    container_name: pgadmin4-cms
+    image: dpage/pgadmin4
+    environment:
+      PGADMIN_DEFAULT_EMAIL: "luizm6325@gmail.com"
+      PGADMIN_DEFAULT_PASSWORD: "PgAdmin2019!"
+    volumes:
+      - vol_pgadmin4:/var/lib/pgadmin
+    ports:
+      - "16543:80"
+    depends_on:
+      - postgres-cms
+    logging:
+      driver: none
+
+  redis-cms:
+    image: redis:alpine
+    container_name: redis-cms
+    hostname: redis
+    ports:
+      - "6379:6379"
+
+  elasticsearch:
+    image: docker.elastic.co/elasticsearch/elasticsearch:8.7.1
+    container_name: elasticsearch-mmp5
+    ports:
+      - "9200:9200"
+      - "9300:9300"
+    hostname: elasticsearch
+    environment:
+      - discovery.type=single-node
+      - ES_JAVA_OPTS=-Xms200m -Xmx200m
+      - cluster.name=docker-cluster
+      - ELASTIC_USERNAME=elastic
+      - ELASTIC_PASSWORD=3jum8P892g40Bpa00ae7mUab
+      - xpack.security.enabled=true
+    volumes:
+      - esdata:/usr/share/elasticsearch/data 
+
+  kibana:
+    image: docker.elastic.co/kibana/kibana:7.5.2
+    container_name: kibana-cms
+    ports:
+      - "5601:5601"
+    environment:
+      - ELASTICSEARCH_HOSTS="http://elasticsearch:9200"
+      - SERVER_NAME="kibana"
+      - ELASTICSEARCH_USERNAME=elastic
+      - ELASTICSEARCH_PASSWORD=3jum8P892g40Bpa00ae7mUab
+    depends_on:
+      - elasticsearch
+
+        # portainer-cms:
+        #   image: portainer/portainer
+        #   container_name: portainer-cms
+        #   ports:
+        #     - 9000:9000
+        #   volumes:
+        #     - /var/run/docker.sock:/var/run/docker.sock
+        #     - portainer_data:/data
+
+  zoo1:
+    image: confluentinc/cp-zookeeper:7.3.2
+    hostname: zoo1
+    container_name: zoo1
+    user: 0:0
+    ports:
+      - "2181:2181"
+    environment:
+      ZOOKEEPER_CLIENT_PORT: 2181
+      ZOOKEEPER_SERVER_ID: 1
+      ZOOKEEPER_SERVERS: zoo1:2888:3888
+    networks: 
+      - broker-kafka
+
+  kafka1:
+    image: confluentinc/cp-kafka:7.3.2
+    hostname: kafka1
+    container_name: kafka1
+    ports:
+      - "9092:9092"
+      - "29092:29092"
+      - "9999:9999"
+    environment:
+      KAFKA_ADVERTISED_LISTENERS: INTERNAL://kafka1:19092,EXTERNAL://${DOCKER_HOST_IP:-127.0.0.1}:9092,DOCKER://host.docker.internal:29092
+      KAFKA_LISTENER_SECURITY_PROTOCOL_MAP: INTERNAL:PLAINTEXT,EXTERNAL:PLAINTEXT,DOCKER:PLAINTEXT
+      KAFKA_INTER_BROKER_LISTENER_NAME: INTERNAL
+      KAFKA_ZOOKEEPER_CONNECT: "zoo1:2181"
+      KAFKA_BROKER_ID: 1
+      KAFKA_LOG4J_LOGGERS: "kafka.controller=INFO,kafka.producer.async.DefaultEventHandler=INFO,state.change.logger=INFO"
+      KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: 1
+      KAFKA_TRANSACTION_STATE_LOG_REPLICATION_FACTOR: 1
+      KAFKA_TRANSACTION_STATE_LOG_MIN_ISR: 1
+      KAFKA_JMX_PORT: 9999
+      KAFKA_JMX_HOSTNAME: ${DOCKER_HOST_IP:-127.0.0.1}
+      KAFKA_AUTHORIZER_CLASS_NAME: kafka.security.authorizer.AclAuthorizer
+      KAFKA_ALLOW_EVERYONE_IF_NO_ACL_FOUND: "true"
+    depends_on:
+      - zoo1
+    networks: 
+      - broker-kafka
+
+  kafdrop1:
+    image: obsidiandynamics/kafdrop:latest
+    depends_on:
+      - kafka1
+    ports:
+      - "19000:9000"
+    environment:
+      KAFKA_BROKERCONNECT: kafka:9092
+    networks:
+      - broker-kafka
+
+        # mongo:
+        #   image: mongo:4.2
+        #   container_name: mongo-cms
+        #   environment:
+        #     MONGO_INITDB_ROOT_USERNAME: root
+        #     MONGO_INITDB_ROOT_PASSWORD: hades2020!
+        #   ports:
+        #     - "27017:27017"
+        #   volumes:
+        #     - ${HOME}/data/mongodb:/data/db
+        #   networks:
+        #     - mongo-compose-network
+
+        # mongo-express:
+        #   image: mongo-express
+        #   ports:
+        #     - 8081:8081
+        #   environment:
+        #     ME_CONFIG_BASICAUTH_USERNAME: root
+        #     ME_CONFIG_BASICAUTH_PASSWORD: hades2020!
+        #     ME_CONFIG_MONGODB_PORT: 27017
+        #     ME_CONFIG_MONGODB_ADMINUSERNAME: root
+        #     ME_CONFIG_MONGODB_ADMINPASSWORD: hades2020!
+        #     ME_CONFIG_MONGODB_SERVER: mongo
+        #   links:
+        #     - mongo
+        #   networks:
+        #     - mongo-compose-network
+
+volumes:
+  portainer_data:
+  vol_pgadmin4:
+  esdata:
+
+networks: 
+  broker-kafka:
+    driver: bridge
+  mongo-compose-network:
+    driver: bridge

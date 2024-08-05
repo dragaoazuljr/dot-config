@@ -30,6 +30,9 @@ saga.setup({
     split = "sh",
     quit = "q",
   },
+	finder = {
+		default = "imp+ref+tyd+def"
+	}
 })
 
 -- Lsp finder find the symbol definition implement reference
