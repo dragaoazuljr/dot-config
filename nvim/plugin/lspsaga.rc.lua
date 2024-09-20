@@ -31,7 +31,7 @@ saga.setup({
     quit = "q",
   },
 	finder = {
-		default = "imp+ref+tyd+def"
+					default = "imp+ref+tyd+def"
 	}
 })
 
@@ -61,3 +61,9 @@ keymap("n", "ge", "<cmd>Lspsaga show_cursor_diagnostics<CR>", { silent = true })
 
 -- Next diagnostcs
 keymap("n", "<leader>dd", "<cmd>Lspsaga diagnostic_jump_next<CR>", { silent = true })
+
+-- Next Error
+keymap("n", "<leader>de", function()
+  require("lspsaga.diagnostic"):goto_next({ severity = vim.diagnostic.severity.ERROR })
+	end
+)
