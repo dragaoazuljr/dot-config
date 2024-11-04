@@ -50,32 +50,32 @@ keymap.set("n", "<Leader>i", "gg=G")
 keymap.set("n", "p", "P")
 
 -- Copilot tab input
--- keymap.set("i", "<Tab>", function ()
--- local copilot = require('copilot.suggestion')
--- 	if copilot.is_visible() then
--- 		copilot.accept_line()
--- 	else 
--- 		local keys = vim.api.nvim_replace_termcodes('<Tab>', true, false, true)
--- 		vim.api.nvim_feedkeys(keys, 'n', false)
--- 	end
--- end,
--- { noremap = true, silent = true})
-
-
---LLM.nvim
 keymap.set("i", "<Tab>", function ()
-	local llm = require('llm.completion')
-
-	if llm.shown_suggestion ~= nil then
-		llm.complete()
+local copilot = require('copilot.suggestion')
+	if copilot.is_visible() then
+		copilot.accept_line()
 	else 
 		local keys = vim.api.nvim_replace_termcodes('<Tab>', true, false, true)
 		vim.api.nvim_feedkeys(keys, 'n', false)
 	end
 end,
 { noremap = true, silent = true})
-keymap.set("n", "<M-]>", ":LLMSuggestion<CR>", { noremap = true, silent = true })
-keymap.set("i", "<M-]>", "<Esc>:LLMSuggestion<CR>i", { noremap = true, silent = true })
+
+
+--LLM.nvim
+-- keymap.set("i", "<Tab>", function ()
+-- 	local llm = require('llm.completion')
+-- 
+-- 	if llm.shown_suggestion ~= nil then
+-- 		llm.complete()
+-- 	else 
+-- 		local keys = vim.api.nvim_replace_termcodes('<Tab>', true, false, true)
+-- 		vim.api.nvim_feedkeys(keys, 'n', false)
+-- 	end
+-- end,
+-- { noremap = true, silent = true})
+-- keymap.set("n", "<M-]>", ":LLMSuggestion<CR>", { noremap = true, silent = true })
+-- keymap.set("i", "<M-]>", "<Esc>:LLMSuggestion<CR>i", { noremap = true, silent = true })
 
 -- find related method
 keymap.set("n", "<M-f>", "vwhy<C-f><Esc><S-C-v>")

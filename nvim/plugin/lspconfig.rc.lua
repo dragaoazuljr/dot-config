@@ -15,7 +15,7 @@ end
 local omnisharp_bin = os.getenv("HOME") .. "/.bin/run"
 local pid = vim.fn.getpid()
 
-nvim_lsp.tsserver.setup {
+nvim_lsp.ts_ls.setup {
   on_attach = on_attach,
   filetypes = { "typescript", "typescriptreact", "typescript.tsx", "javascript", "javascriptreact" },
   cmd = { "typescript-language-server", "--stdio" }

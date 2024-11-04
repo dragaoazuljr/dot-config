@@ -72,8 +72,15 @@ packer.startup(function(use)
 	-- Copilot.lua
 	-- use 'dragaoazuljr/copilot.lua'
 	
-	-- use 'zbirenbaum/copilot.lua'
-	-- use { 'zbirenbaum/copilot-cmp', after = { "copilot.lua" }, config = function () require("copilot_cmp").setup() end}
+	use 'zbirenbaum/copilot.lua'
+	use { 
+		'zbirenbaum/copilot-cmp', 
+		cmd = "Copilot",
+		event = "InsertEnter",
+		config = function()
+			require("copilot").setup({})
+		end,
+	}
 
 	use 'huggingface/llm.nvim'
 
@@ -100,9 +107,5 @@ packer.startup(function(use)
       -- you're options coes here
     },
   }
-
-	--Mason
-	
-	use 'williamboman/mason.nvim'
 
 end)

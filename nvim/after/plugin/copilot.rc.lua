@@ -18,19 +18,20 @@ copilot.setup {
     },
   },
   suggestion = {
-    enabled = false,
+    enabled = true,
     auto_trigger = true,
     debounce = 300,
     keymap = {
       accept = "<M-\\>",
       accept_word = false,
       accept_line = false,
-      -- next = "<M-]>",
-      -- prev = "<M-[>",
-      -- dismiss = "<C-]>",
+      next = "<M-]>",
+      prev = "<M-[>",
+      dismiss = "<C-]>",
     },
   },
   filetypes = {
+    ["*"] = false,
 		javascript = true,
 		javacriptreact = true,
 		typescript = true,
@@ -44,7 +45,6 @@ copilot.setup {
 		python = true,
 		go = true,
 		php = true,
-    ["*"] = false,
   },
   copilot_node_command = 'node', -- Node.js version must be > 16.x
   server_opts_overrides = {},
