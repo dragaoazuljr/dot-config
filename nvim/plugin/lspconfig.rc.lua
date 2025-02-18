@@ -58,7 +58,8 @@ local workspace_dir = '/home/danillom/projects/' .. project_name
 local config = {
     cmd = {
 			'jdtls',
-			"-data", workspace_dir
+			"-data", workspace_dir,
+			"$JDTLS_JVM_ARGS"
 		},
     root_dir = vim.fs.dirname(vim.fs.find({'gradlew', '.git', 'mvnw'}, { upward = true })[1]),
 		init_options = {
