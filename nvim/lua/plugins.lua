@@ -66,6 +66,7 @@ packer.startup(function(use)
     requires = 'nvim-treesitter/nvim-treesitter'
   }
 
+	-- AI
 	-- Copilot.vim
 	-- use 'dragaoazuljr/copilot.vim'
 	
@@ -73,16 +74,24 @@ packer.startup(function(use)
 	-- use 'dragaoazuljr/copilot.lua'
 	
 	use 'zbirenbaum/copilot.lua'
-	use { 
-		'zbirenbaum/copilot-cmp', 
-		cmd = "Copilot",
-		event = "InsertEnter",
-		config = function()
-			require("copilot").setup({})
-		end,
-	}
+	-- use { 
+	-- 	'zbirenbaum/copilot-cmp', 
+	-- 	cmd = "Copilot",
+	-- 	event = "InsertEnter",
+	-- 	config = function()
+	-- 		require("copilot").setup({})
+	-- 	end,
+	-- }
 
 	use 'huggingface/llm.nvim'
+
+	use {
+		"olimorris/codecompanion.nvim",
+		requires = {
+			"nvim-lua/plenary.nvim",
+			"nvim-treesitter/nvim-treesitter",
+		}
+	}
 
 	-- Java
 	use 'nvim-neotest/nvim-nio'
