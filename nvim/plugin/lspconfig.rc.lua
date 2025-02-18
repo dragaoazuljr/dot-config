@@ -58,22 +58,21 @@ local workspace_dir = '/home/danillom/projects/' .. project_name
 local config = {
     cmd = {
 			'jdtls',
-			"-data", workspace_dir,
-			"$JDTLS_JVM_ARGS"
+			"-data", workspace_dir
 		},
     root_dir = vim.fs.dirname(vim.fs.find({'gradlew', '.git', 'mvnw'}, { upward = true })[1]),
 		init_options = {
 			bundles = {
 				vim.fn.glob("home/danillom/apps/java-debug/com.microsoft.java.debug.plugin/target/com.microsoft.java.debug.plugin-*.jar", 1)
 			};
-		}
+		},
+		on_attach = function(client, bufnr)
+          require("jdtls").setup_dap({ hotcodereplace = "auto" })
+          require("jdtls.dap").setup_dap_main_class_configs()
+          require("jdtls").add_commands()
+					require('dap.ext.vscode').load_launchjs()
+		end,
 }
-
-config['on_attach'] = function(client, bufnr)
-	require('jdtls.setup').setup_dap({ hotcodereplace = 'auto' })
-	require("jdtls.dap").setup_dap_main_class_configs() -- discover main class
-	require("jdtls.setup").add_commands() -- not related to debugging but you probably want this
-end
 
 nvim_lsp.jdtls.setup{config}
 

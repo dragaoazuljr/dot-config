@@ -80,8 +80,6 @@ end,
 -- find related method
 keymap.set("n", "<M-f>", "vwhy<C-f><Esc><S-C-v>")
 
-
-
 -- nvim-dap
 vim.keymap.set('n', '<F5>', function() require('dap').continue() end)
 vim.keymap.set('n', '<F10>', function() require('dap').step_over() end)

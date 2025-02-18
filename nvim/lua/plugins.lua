@@ -32,7 +32,7 @@ packer.startup(function(use)
   use 'baliestri/aura-theme'
   use 'folke/tokyonight.nvim'
   use 'shaunsingh/nord.nvim'
-
+	use 'Mofiqul/dracula.nvim'
   use 'jose-elias-alvarez/null-ls.nvim' -- Use neovim as Language Server
   use 'MunifTanjim/prettier.nvim' -- prettier
 
@@ -84,12 +84,33 @@ packer.startup(function(use)
 
 	use 'huggingface/llm.nvim'
 
-	--Java
+	-- Java
+	use 'nvim-neotest/nvim-nio'
 	use 'mfussenegger/nvim-dap'
+
+	use {
+    "rcarriga/nvim-dap-ui",
+    dependencies = { "mfussenegger/nvim-dap" },
+    config = function()
+      local dap = require "dap"
+      local dapui = require "dapui"
+      dapui.setup()
+      dap.listeners.after.event_initialized["dapui_config"] = function()
+        dapui.open()
+      end
+      dap.listeners.before.event_terminated["dapui_config"] = function()
+        dapui.close()
+      end
+      dap.listeners.before.event_exited["dapui_config"] = function()
+        dapui.close()
+      end
+    end,
+  }
+
 	use {
 		'mfussenegger/nvim-jdtls',
 		dependencies = {
-			'mfussenegger/nvim-dap'
+			'mfussenegger/nvim-dap',
 		}
 	}
 
