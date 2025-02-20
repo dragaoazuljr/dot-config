@@ -3,11 +3,12 @@ if (not status) then return end
 
 codecompanion.setup({
 	adapters = {
-		deekseekCoder = function()
+		llama31 = function()
 			return require("codecompanion.adapters").extend("ollama", {
-				name = "deepseekCoder",
+				name = "llama31",
 				env = {
-					url = "http://192.168.0.14:11434",
+					-- url = "http://192.168.0.14:11434",
+					url = "http://0.0.0.0:11434",
 					api_key = "key"
 				},
 				headers = {
@@ -19,7 +20,7 @@ codecompanion.setup({
         },
 				schema = {
 					model = {
-						default = "deepseek-coder-v2:16b-lite-base-q4_K_M"
+						default = "llama3.1"
 					},
 					num_ctx = {
 						default = 4096,
@@ -46,7 +47,7 @@ codecompanion.setup({
         },
 				schema = {
 					model = {
-						default = "deepseek-r1:7b"
+						default = "deepseek-r1:14b"
 					},
 					num_ctx = {
 						default = 8092,
@@ -60,10 +61,10 @@ codecompanion.setup({
 	},
 	strategies = {
 		chat = {
-			adapter = "deekseekR1",
+			adapter = "copilot",
 		},
 		inline = {
-			adapter = "deekseekCoder"
+			adapter = "copilot"
 		}
 	}
 })
