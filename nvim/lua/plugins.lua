@@ -8,7 +8,7 @@ end
 vim.cmd [[packadd packer.nvim]]
 
 packer.startup(function(use)
-	use 'wbthomason/packer.nvim'
+	use           'wbthomason/packer.nvim'
 	use {
 		'svrana/neosolarized.nvim',
 		requires = { 'tjdevries/colorbuddy.nvim' }
@@ -33,7 +33,8 @@ packer.startup(function(use)
   use 'folke/tokyonight.nvim'
   use 'shaunsingh/nord.nvim'
 	use 'Mofiqul/dracula.nvim'
-  use 'jose-elias-alvarez/null-ls.nvim' -- Use neovim as Language Server
+	use 'nvimtools/none-ls-extras.nvim'
+  use 'nvimtools/none-ls.nvim' -- Use neovim as Language Server
   use 'MunifTanjim/prettier.nvim' -- prettier
 
   use 'windwp/nvim-autopairs'

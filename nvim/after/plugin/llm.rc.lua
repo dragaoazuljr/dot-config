@@ -6,8 +6,9 @@ llm.setup({
 	--model = "codeqwen:code",
 	--model = "deepseek-coder-v2:16b-lite-base-q4_K_M",
 	--model = "llama3.1:8b-instruct-q8_0",
+	--model = "qwen2.5-coder:1.5b-base",
 	model = "qwen2.5-coder:3b-base-q4_1",
-	context_window = 8092,
+	context_window = 4096,
 	enable_suggestions_on_startup = true,
   enable_suggestions_on_files = {
 		"*.js",
@@ -42,7 +43,7 @@ llm.setup({
   },	
 	request_body = {
 		options = {
-			num_predict = 240,
+			num_predict = 60,
 			temperature = 0.4,
 			top_p = 0.95,
 		}
