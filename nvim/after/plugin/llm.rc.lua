@@ -7,7 +7,7 @@ llm.setup({
 	--model = "deepseek-coder-v2:16b-lite-base-q4_K_M",
 	--model = "llama3.1:8b-instruct-q8_0",
 	--model = "qwen2.5-coder:1.5b-base",
-	model = "qwen2.5-coder:3b-base-q4_1",
+	model = "qwen2.5-coder:14b-base",
 	context_window = 4096,
 	enable_suggestions_on_startup = true,
   enable_suggestions_on_files = {
@@ -22,7 +22,8 @@ llm.setup({
 		"*.go",
 		"*.php",
 		"*.jsx",
-		"*.tsx"
+		"*.tsx",
+		"*.ino"
 	},
 	-- url = "http://192.168.0.14:11434",
 	url = "http://0.0.0.0:11434",
@@ -36,15 +37,20 @@ llm.setup({
     --suffix = "<｜fim▁hole｜>",
     --middle = "<｜fim▁end｜>",
 
-		-- Qwen 
+		-- Qwen 1.5b-base
+		-- prefix = "<|fim_prefix|>",
+    -- suffix = "<|fim_suffix|>",
+    -- middle = "<|fim_middle|>",
+
+		-- Qwen 7b-base
 		prefix = "<|fim_prefix|>",
     suffix = "<|fim_suffix|>",
     middle = "<|fim_middle|>",
   },	
 	request_body = {
 		options = {
-			num_predict = 60,
-			temperature = 0.4,
+			num_predict = 120,
+			temperature = 0.2,
 			top_p = 0.95,
 		}
   },
